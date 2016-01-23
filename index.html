@@ -1,0 +1,90 @@
+
+<!doctype html>
+<!--Pop-Out Drawer from http://ascott1.github.io/bigSlide.js/-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chris Taylor's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="big_slide.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.menu-link').bigSlide();
+    });
+  </script>
+</head>
+
+<body>
+<header class="wrapper content">
+  <img alt="Udacity Logo" class="header_svg" src="img/udacity.svg">
+  <section id="name_contact">
+    <h1>Christopher Taylor</h1>
+    <h2>Front-End Ninja For Hire</h2>
+  </section>
+  <img alt="Navigation Menu Button" class="header_svg menu-link" id="burger" src="img/burger.svg">
+</header>
+<nav class="nav" id="menu">
+  <a class="zocial-github nav__item" href="https://github.com/LiquidSwordsman"><span>GitHub</span></a>
+  <a class="zocial-linkedin nav__item" href="https://www.linkedin.com/in/christopher-taylor-37424878"><span>LinkedIn</span></a>
+  <a class="zocial-email nav__item" href="mailto:ctaylor@liquidswords.ninja?subject=Offer%20Of%20Employment"><span>Email</span></a>
+  <a class="zocial-call nav__item" href="tel:+12069229835"><span>Telephone</span></a> 
+</nav>
+<hr />
+
+<main class="wrapper">
+  <img alt="A Screenshot of Some C# Code I Wrote" id="splash" src="img/splash_950w.png"><br />
+
+  <h3>Featured Work</h3><br />
+  <div class="content">
+    <section class="highlighted_work ellipsis">
+      <a href="https://www.liquidswords.ninja/brighton/">
+        <figure>
+          <img class="feat_work_img" src="img/brighton_419w.jpg" 
+            srcset="img/brighton_837w.jpg 837w, 
+                    img/brighton_419w.jpg 419w" 
+            sizes="(min-width:900px) 31vw,
+                   (max-width:701px) 48vw,
+                   (max-width: 400px) 95vw" alt="Screenshot Of A Responsive Website">
+          <figcaption>
+            <h4>Brighton Times</h4>
+            <h5 class="ellipsis">liquidswords.ninja/udacity/responsive/</h5>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+    <section class="highlighted_work ellipsis">
+      <a href="https://github.com/LiquidSwordsman/CodeSample/tree/master/C%23/PokerHandEvaluator">
+        <figure>
+          <img class="feat_work_img" src="img/work2_419w.png" 
+            srcset="img/work2_837w.png 837w, 
+                    img/work2_419w.png 419w" 
+            sizes="(min-width:900px) 31vw,
+                   (max-width:701px) 48vw,
+                   (max-width: 400px) 95vw" alt="A Screenshot of Some C# Code I Wrote"><br />
+          <figcaption>
+            <h4>Poker Hand Evaluator</h4>
+            <h5 class="ellipsis">https://git.io/vzZhx</h5>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+    <section class="highlighted_work ellipsis">
+      <a href="http://liquidswords.ninja/udacity/responsive/">
+        <figure>
+          <img class="feat_work_img" src="img/placeholder.svg" alt="A Placeholder Image"><br />
+          <figcaption>
+            <h4>Coming Soon</h4>
+            <h5 class="ellipsis">https://example.com</h5>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+  </div>
+</main>
+</body>
+</html>
+  
